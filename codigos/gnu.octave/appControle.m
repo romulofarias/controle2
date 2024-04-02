@@ -6,13 +6,13 @@ h.f = figure("name","Sistemas de Controle - Grupo 3",'numbertitle','off');
 #'Informação','icon','info','closefcn','uiresume(h.f)');
 # Organizando a tela em paineis
 # painel do controlador
-h.ctrlPanel = uipanel(h.f,"units","normalized","title","Configuração do controlador","position",[0.02 0.8 0.38 0.18]);
+h.ctrlPanel = uipanel(h.f,"units","normalized","title","Configuração do controlador PID","position",[0.02 0.8 0.38 0.18]);
 h.kp_label = uicontrol(h.ctrlPanel,"units","normalized","style","text","string", "Kp", "position",[0.02 0.65 0.1 0.25]);
-h.kp_edtxt = uicontrol(h.ctrlPanel,"units","normalized","style","edit","string","","position",[0.1 0.65 0.2 0.25]);
+h.kp_edtxt = uicontrol(h.ctrlPanel,"units","normalized","style","edit","string","0","position",[0.1 0.65 0.2 0.25]);
 h.ki_label = uicontrol(h.ctrlPanel,"units","normalized","style","text","string", "Ki", "position",[0.30 0.65 0.1 0.25]);
-h.ki_edtxt = uicontrol(h.ctrlPanel,"units","normalized","style","edit","string","","position",[0.38 0.65 0.2 0.25]);
+h.ki_edtxt = uicontrol(h.ctrlPanel,"units","normalized","style","edit","string","0","position",[0.38 0.65 0.2 0.25]);
 h.kd_label = uicontrol(h.ctrlPanel,"units","normalized","style","text","string", "Kd", "position",[0.58 0.65 0.1 0.25]);
-h.kd_edtxt = uicontrol(h.ctrlPanel,"units","normalized","style","edit","string","","position",[0.66 0.65 0.2 0.25]);
+h.kd_edtxt = uicontrol(h.ctrlPanel,"units","normalized","style","edit","string","0","position",[0.66 0.65 0.2 0.25]);
 
 h.select_L1 = uicontrol(h.ctrlPanel,"units","normalized","style","radiobutton","callback",@HandlerControl,"string","L1","position",[0.25 0.15 0.1 0.1]);
 h.select_L2 = uicontrol(h.ctrlPanel,"units","normalized","style","radiobutton","callback",@HandlerControl,"string","L2","position",[0.50 0.15 0.1 0.1]);
